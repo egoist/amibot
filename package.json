@@ -1,0 +1,45 @@
+{
+  "name": "amibot",
+  "version": "0.0.0",
+  "description": "Am I bot or not?",
+  "repository": {
+    "url": "egoist/amibot",
+    "type": "git"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "bots.json"
+  ],
+  "scripts": {
+    "test": "npm run lint && jest",
+    "lint": "xo"
+  },
+  "keywords": [
+    "bot",
+    "is-bot",
+    "detect-bot",
+    "crawler",
+    "spider",
+    "search-engine",
+    "social"
+  ],
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint-config-rem": "^3.0.0",
+    "jest-cli": "^19.0.0",
+    "node-fetch": "^2.1.1",
+    "xo": "^0.18.0"
+  },
+  "xo": {
+    "extends": "rem",
+    "envs": [
+      "jest"
+    ]
+  }
+}
