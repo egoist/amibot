@@ -14,8 +14,7 @@
     "bots.json"
   ],
   "scripts": {
-    "test": "npm run lint && jest",
-    "lint": "xo"
+    "test": "jest"
   },
   "keywords": [
     "bot",
@@ -33,15 +32,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "eslint-config-rem": "^3.0.0",
-    "jest-cli": "^19.0.0",
-    "node-fetch": "^2.1.1",
-    "xo": "^0.18.0"
-  },
-  "xo": {
-    "extends": "rem",
-    "envs": [
-      "jest"
-    ]
+    "jest-cli": "^26.6.3",
+    "node-fetch": "^2.6.1"
   }
 }

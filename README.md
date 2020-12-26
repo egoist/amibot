@@ -1,7 +1,6 @@
-
 # amibot
 
-[![NPM version](https://img.shields.io/npm/v/amibot.svg?style=flat)](https://npmjs.com/package/amibot) [![NPM downloads](https://img.shields.io/npm/dm/amibot.svg?style=flat)](https://npmjs.com/package/amibot) [![CircleCI](https://circleci.com/gh/egoist/amibot/tree/master.svg?style=shield)](https://circleci.com/gh/egoist/amibot/tree/master)  [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/egoist/donate) [![chat](https://img.shields.io/badge/chat-on%20discord-7289DA.svg?style=flat)](https://chat.egoist.moe)
+[![NPM version](https://img.shields.io/npm/v/amibot.svg?style=flat)](https://npmjs.com/package/amibot) [![NPM downloads](https://img.shields.io/npm/dm/amibot.svg?style=flat)](https://npmjs.com/package/amibot) [![CircleCI](https://circleci.com/gh/egoist/amibot/tree/master.svg?style=shield)](https://circleci.com/gh/egoist/amibot/tree/master) [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/egoist/donate) [![chat](https://img.shields.io/badge/chat-on%20discord-7289DA.svg?style=flat)](https://chat.egoist.moe)
 
 Detect bots via user-agent.
 
@@ -14,19 +13,19 @@ yarn add amibot
 ## Usage
 
 ```js
-const amibot = require('amibot')
+const { isBot } = require("amibot");
 
-amibot(req.headers['user-agent'])
+isBot(req.headers["user-agent"]);
 //=> true or false
 
-amibot('Googlebot/2.1 (+http://www.google.com/bot.html)')
+isBot("Googlebot/2.1 (+http://www.google.com/bot.html)");
 //=> true
 ```
 
 Get bots list:
 
 ```js
-const bots = require('amibot/bots')
+const bots = require("amibot/bots");
 ```
 
 ## Contributing
@@ -37,10 +36,9 @@ const bots = require('amibot/bots')
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-
 ## Author
 
 **amibot** © [egoist](https://github.com/egoist), Released under the [MIT](./LICENSE) License.<br>
 Authored and maintained by egoist with help from contributors ([list](https://github.com/egoist/amibot/contributors)).
 
-> [github.com/egoist](https://github.com/egoist) · GitHub [@egoist](https://github.com/egoist) · Twitter [@_egoistlily](https://twitter.com/_egoistlily)
+> [github.com/egoist](https://github.com/egoist) · GitHub [@egoist](https://github.com/egoist) · Twitter [@\_egoistlily](https://twitter.com/_egoistlily)
